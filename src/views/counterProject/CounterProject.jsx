@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom'
 
 function UseReducer() {
 
-  // Defining the reducer function
+  // Defining the reducer function using switch-case
   const reducer = (state, action) => {
-    if (action.type === 'INCREMENT') {
-      return state + 1;
-    }
-    if (action.type === 'DECREMENT') {
-      return state - 1;
-    }
-    if (action.type === 'RESET') {
-      return 0;
+    switch (action.type) {
+      case 'INCREMENT':
+        return state + 1;
+      case 'DECREMENT':
+        return state - 1;
+      case 'RESET':
+        return 0;
+      default:
+        return state;
     }
   }
 
