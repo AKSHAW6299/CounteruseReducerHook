@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import CounterProject from './views/home/CounterProject';
+import CounterProject from './views/counterProject/CounterProject';
 import Index from './views/index/Index';
 
 
